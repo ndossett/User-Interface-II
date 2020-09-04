@@ -15,7 +15,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-/* border: 0;   */
+border: 0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -25,7 +25,7 @@ vertical-align: baseline;
 /* General Styles */
 * {
     box-sizing: border-box;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     max-width: 100%;
 }
 html {
@@ -40,19 +40,17 @@ body {
 h1 {
     font-family: 'Neuton', serif;
     font-size: 6rem;
+    margin-left: 4%;
 }
 h2 {
     font-family: 'Neuton', serif;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 h3 {
-    font-size: 2rem
+    font-size: 2rem;
 }
 a {
     text-decoration: none;
-}
-section {
-    padding:
 }
 /* End General Styles */
 
@@ -63,12 +61,10 @@ header {
     background-color: mediumblue;
 }
 h1 {
-    margin-left: 2%;
     color: white;
 }
 nav {
     display: flex;
-    justify-content: ;
     margin-left: 4%;
 }
 nav a {
@@ -84,33 +80,41 @@ nav a:hover {
 .about-container {
     display: flex;
     justify-content: space-around;
+    align-content: left;
     padding: 1% 0;
-    background-color: lightblue;
+    border-bottom: 2px solid mediumblue;
 }
 .about-me {
     display: flex;
-    width: 30%;
+    justify-content: space-around;
+    align-content: left;
+    width: 80%;
 }
 .about-me img {
     border-radius: 25%;
+    width: 30%;
     }
 .about-text {
-    width: 70%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    line-height: rem;
-    margin-left: 10%;
-    justify-content: space-around;
+    justify-content: flex-end;
+    text-align: left;
+    align-items: flex-start;
+    line-height: 4rem;
+}
+h2 {
+    text-align: left;
 }
 .about-text button {
     background-color: mediumblue;
     color: white;
     border-radius: 25%;
-    width: 20%;
-}
-.about-text p {
-    width 30%;
-}
+    width: 40%;
+    padding: 1%;
+    margin: 2%
+}    
+
 /* End About Me Styles */
 
 /* Projects Section Styles */
@@ -122,6 +126,7 @@ nav a:hover {
 .screenshots div {
     width: 25%;
     display: flex;
+    margin: 2% auto;
     flex-direction: column;
     align-items: center;
 }
@@ -136,6 +141,7 @@ footer {
     justify-content: space-around;
     background-color: mediumblue;
     color: white;
+    padding: 3%;
 }
 footer div {
     align-items: center;
@@ -144,5 +150,8 @@ footer div {
 footer div button {
     background-color: lightskyblue;
     color: black;
+    font-size: 2rem;
+    padding: 4%;
 }
+
 /* End Footer Styles */
