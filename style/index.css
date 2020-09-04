@@ -87,24 +87,29 @@ nav a:hover {
     padding: 1% 0;
     background-color: lightblue;
 }
-.about-container img {
-    border-radius: 25%;
-    }
 .about-me {
     display: flex;
     width: 30%;
 }
+.about-me img {
+    border-radius: 25%;
+    }
 .about-text {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    line-height: 5rem;
+    line-height: rem;
+    margin-left: 10%;
+    justify-content: space-around;
 }
-#about-text button {
+.about-text button {
     background-color: mediumblue;
     color: white;
     border-radius: 25%;
-    padding: 2%
+    width: 20%;
+}
+.about-text p {
+    width 30%;
 }
 /* End About Me Styles */
 
@@ -112,6 +117,7 @@ nav a:hover {
 .screenshots {
     display: flex;
     flex-wrap: wrap;
+    padding: 2%;
 }
 .screenshots div {
     width: 25%;
@@ -127,6 +133,16 @@ h3 {
 /* Footer Styles */
 footer {
     display: flex;
+    justify-content: space-around;
     background-color: mediumblue;
+    color: white;
+}
+footer div {
+    align-items: center;
+    text-align: center;
+}
+footer div button {
+    background-color: lightskyblue;
+    color: black;
 }
 /* End Footer Styles */
