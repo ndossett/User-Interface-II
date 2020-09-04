@@ -114,8 +114,10 @@ h2 {
     width: 40%;
     padding: 1%;
     margin-bottom: 3%;
-    
 }    
+.about-text button:hover {
+    background-color: violet;
+}
 
 /* End About Me Styles */
 
@@ -143,20 +145,26 @@ h3 {
 /* Footer Styles */
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-items: space-around;
     background-color: mediumblue;
     color: white;
-    padding: 3%;
+    padding: 1.5%;
 }
 footer div {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 footer div a {
     background-color: lightskyblue;
     color: black;
-    font-size: 2rem;
-    padding: 4%;
+    font-size: 2r;
+    padding: 1.5%;
+    width: 10%;
+    margin-bottom: 2%;
 }
 footer div a:hover {
 background-color: violet;
