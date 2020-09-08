@@ -242,16 +242,21 @@ width: 40%
     width: 48%;
 }
 
+footer {
+    width: 100%;
+    margin: 0;
+}
+
 footer div {
     justify-items: space-around;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
 footer div a {
-flex-flow: row nowrap;
-width: 10%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 30%;
 }
 }
 /* End media styles for 800px and below */
